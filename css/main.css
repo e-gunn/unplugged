@@ -100,13 +100,21 @@ body {
   flex-flow: row wrap;
 }
 
-header .content-wrapper {
-  max-width: 1200px;
+.content-wrapper {
+  max-width: 360px;
   width: 90%;
+}
+
+header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
+}
+
+.header-divider {
+  width: 100%;
 }
 
 header,
@@ -120,7 +128,7 @@ footer {
 /* ------------------- Header Section --------------------------------------- */
 
 header {
-
+  padding: 15px 0;
 }
 
 header nav {
@@ -128,12 +136,14 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   }
 
 header nav ul li {
@@ -142,10 +152,6 @@ header nav ul li {
 
 header nav ul li a {
 
-}
-
-header .content-wrapper {
-  flex-flow: row wrap;
 }
 
 /* ------------------------ Main Section ------------------------------------ */
@@ -175,6 +181,10 @@ aside {
   flex-flow: row wrap;
 }
 
+.features p {
+  margin: 0;
+}
+
 .features-item {
   display: flex;
   justify-content: center;
@@ -187,16 +197,26 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
+}
+
+h3 {
+  width: 100%;
 }
 
 /* ------------------------ Footer Section ---------------------------------- */
 
-footer {
-
+footer p {
+  margin: 0;
 }
 
-.footer-content {
+footer .content-wrapper {
+  width: 100%;
+}
 
+footer .footer-content {
+  margin: 50px 0;
+  width: 55%;
 }
 
 footer .social {
@@ -227,7 +247,7 @@ footer .social-icons {
   flex-flow: row wrap;
 }
 
-/* ----------------------- Footer Section ----------------------------------- */
+/* ----------------------- FAQ Page ----------------------------------- */
 
 .faq {
   display: flex;
