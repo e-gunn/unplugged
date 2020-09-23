@@ -89,10 +89,6 @@ textarea {
 
 /* -------------- Base - Header - Footer Styles ----------------------------- */
 
-html {
-  font-size:
-}
-
 body {
   display: flex;
   justify-content: center;
@@ -101,7 +97,7 @@ body {
 }
 
 .content-wrapper {
-  max-width: 360px;
+  max-width: 1200px;
   width: 90%;
 }
 
@@ -111,6 +107,7 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+  width: 100%;
 }
 
 .header-divider {
@@ -171,7 +168,11 @@ aside {
 }
 
 .form-description {
+  width: 100%;
+}
 
+.form {
+  width: 100%;
 }
 
 .features {
@@ -190,6 +191,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
 }
 
 .reviews {
@@ -197,6 +199,13 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.reviews-img {
+  width: 100%;
+}
+
+.reviews-description {
   width: 100%;
 }
 
@@ -211,6 +220,10 @@ footer p {
 }
 
 footer .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   width: 100%;
 }
 
@@ -219,10 +232,15 @@ footer .footer-content {
   width: 55%;
 }
 
+.contact {
+  width: 100%;
+}
+
 footer .social {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 footer .social-icons {
@@ -351,15 +369,155 @@ footer .social-icons {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* tablet styles here */
+  header {
+    justify-content: space-between;
+  }
+
+  header .content-wrapper {
+    justify-content: space-between;
+  }
+
+  header img {
+    width: 50%;
+  }
+
+  header nav {
+    width: 50%;
+  }
+
+  header nav ul {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  .features article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    flex-basis: auto;
+  }
+
+  .form-description {
+    width: 50%;
+  }
+
+  .form {
+    width: 50%;
+  }
+
+  .features-item {
+    width: 50%;
+  }
+
+  .reviews article {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .reviews-img {
+    width: 50%;
+  }
+
+  .reviews-description {
+    width: 50%;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact {
+    width: 50%;
+  }
+
+  .social {
+    width: 50%;
+  }
+
+  .faq-content {
+    flex-basis: auto;
+  }
+
+/* ABOUT PAGE */
+
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mission-content p {
+    width: 50%;
+  }
+
+  .contact-section .content-wrapper h2 {
+    width: 100%;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+/* FAQ PAGE */
+
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq-content {
+    flex-basis: 40%;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
+
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+@media only screen and (min-width: 1200px) {
+  /* desktop styles here */
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+  }
+
+  aside .content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 50%;
+  }
+
+  .features-item {
+    width: 33.3%;
+  }
+
+  .reviews {
+    width: 50%;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 50%;
+  }
 }
 
 /* ==========================================================================
