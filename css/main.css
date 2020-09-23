@@ -143,13 +143,6 @@ header nav ul {
   width: 100%;
   }
 
-header nav ul li {
-
-}
-
-header nav ul li a {
-
-}
 
 /* ------------------------ Main Section ------------------------------------ */
 
@@ -192,6 +185,10 @@ aside {
   align-items: center;
   flex-flow: row wrap;
   width: 100%;
+}
+
+.features-item-description {
+  padding: 20px 50px;
 }
 
 .reviews {
@@ -488,35 +485,21 @@ footer .social-icons {
 
 @media only screen and (min-width: 1200px) {
   /* desktop styles here */
-  header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
+
+  .form-description {
+    width: 33.3%;
   }
 
-  aside .content-wrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-flow: row wrap;
-    width: 50%;
+  .form {
+    width: 33.3%;
   }
 
   .features-item {
     width: 33.3%;
   }
 
-  .reviews {
-    width: 50%;
-  }
-
   .footer-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-flow: row wrap;
-    width: 50%;
+    justify-content: space-between;
   }
 }
 
