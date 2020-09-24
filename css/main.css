@@ -135,11 +135,11 @@ p {
 }
 
 img {
-
+  width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
@@ -199,9 +199,19 @@ header nav ul {
   width: 100%;
   }
 
+  header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
 /* ------------------------ Main Section ------------------------------------ */
 
 .hero-area {
+  background: url('img/unplugged-retreat.jpg') center no-repeat #333;
+  background-size: cover;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -225,6 +235,8 @@ aside {
 }
 
 .features {
+  background: url('img/ .jpg') center no-repeat #333; 
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -249,6 +261,14 @@ aside {
 
 .reviews {
   background-color:
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.reviews figure {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -484,6 +504,10 @@ input[type=button] {
     justify-content: space-around;
   }
 
+  header figure {
+    width: 50%;
+  }
+
   aside .content-wrapper {
     display: flex;
     justify-content: center;
@@ -513,6 +537,10 @@ input[type=button] {
   .reviews article {
     display: flex;
     justify-content: flex-start;
+  }
+
+  .reviews figure {
+    width: 50%;
   }
 
   .reviews-img {
@@ -581,6 +609,10 @@ input[type=button] {
 
 @media only screen and (min-width: 1200px) {
   /* desktop styles here */
+
+  header figure {
+    width: 60%;
+  }
 
   .form-description {
     width: 33.3%;
