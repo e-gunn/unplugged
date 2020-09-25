@@ -337,6 +337,14 @@ footer .social-icons {
   align-items: center;
 }
 
+.social-icons i {
+  border-radius: 100%;
+  color: green;
+  height: auto;
+  padding: 10px;
+  width: 33.3%;
+}
+
 /* ----------------------- About Page --------------------------------------- */
 
 .mission {
