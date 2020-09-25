@@ -597,6 +597,10 @@ input[type=button] {
     width: 50%;
   }
 
+  .map figure {
+    padding-bottom: 56.25;
+  }
+
   .contact-section .content-wrapper h2 {
     width: 100%;
   }
