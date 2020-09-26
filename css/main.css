@@ -247,11 +247,6 @@ aside {
   margin: 0;
 }
 
-.features i {
-	font-size: 3.75em;
-  margin-bottom: 40px;
-}
-
 .features-item {
   display: flex;
   justify-content: center;
@@ -260,8 +255,15 @@ aside {
   width: 100%;
 }
 
+.features i {
+	font-size: 3.75em;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
 .features-item-description {
-  padding: 20px 50px;
+  padding: 20px 60px;
+  text-align: center;
 }
 
 .reviews {
@@ -335,6 +337,7 @@ footer .social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .social-icons i {
