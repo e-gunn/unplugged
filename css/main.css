@@ -147,9 +147,8 @@ address {
 }
 
 .content-wrapper {
-  padding: 20px;
   max-width: 1200px;
-  width: 100%;
+  width: 90%;
 }
 
 /* -------------- Header - Footer Styles ----------------------------- */
@@ -160,7 +159,6 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   padding: 0;
-  margin: 0;
   width: 100%;
 }
 
@@ -174,6 +172,8 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
+  width: 100%;
 }
 
 /* ------------------- Header Section --------------------------------------- */
@@ -181,6 +181,14 @@ footer {
 header {
   background: #0B0804;
   padding: 15px 0;
+}
+
+header figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav {
@@ -192,22 +200,15 @@ header nav {
 }
 
 header nav ul {
-  font-size: 1.125em;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-flow: row wrap;
+  font-size: 1.125em;
   padding: 15px 0 0 0;
   margin: 0;
   text-transform: uppercase;
   width: 100%;
-  }
-
-  header figure {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
   }
 
 /* ------------------------ Main Section ------------------------------------ */
@@ -219,6 +220,7 @@ header nav ul {
   justify-content: flex-start;
   align-items: center;
   flex-flow: row wrap;
+  padding: 20px;
 }
 
 aside {
@@ -227,6 +229,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 20px 0;
 }
 
 aside h3 {
@@ -536,27 +539,37 @@ input[type=button] {
 @media only screen and (min-width: 768px) {
   /* tablet styles here */
   header {
-    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
   }
 
   header .content-wrapper {
     justify-content: space-between;
   }
 
-  header img {
+  header figure {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0;
     width: 50%;
   }
 
+  header img {
+    justify-content: flex-start;
+    width: 60%;
+  }
+
   header nav {
+    justify-content: space-around;
+    margin: 0;
     width: 50%;
   }
 
   header nav ul {
     justify-content: space-around;
-  }
-
-  header figure {
-    width: 50%;
+    flex-flow: row wrap;
   }
 
   aside .content-wrapper {
@@ -565,15 +578,11 @@ input[type=button] {
     flex-flow: row wrap;
   }
 
-  .features article {
+  .form-description {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    flex-basis: auto;
-  }
-
-  .form-description {
     width: 50%;
   }
 
@@ -583,6 +592,14 @@ input[type=button] {
 
   .features-item {
     width: 50%;
+  }
+
+  .features article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    flex-basis: auto;
   }
 
   .reviews article {
@@ -600,6 +617,10 @@ input[type=button] {
 
   .reviews-description {
     width: 50%;
+  }
+
+  footer {
+    width: 100%;
   }
 
   .footer-content {
