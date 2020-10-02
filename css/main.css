@@ -543,33 +543,29 @@ input[type=button] {
     width: 100%;
   }
 
-  header .content-wrapper {
-    justify-content: space-between;
+  .header-divider {
+    width: 0;
   }
 
   header figure {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-flow: row wrap;
-    margin: 0;
     width: 50%;
   }
 
   header img {
-    justify-content: flex-start;
     width: 60%;
   }
 
   header nav {
-    justify-content: space-around;
-    margin: 0;
     width: 50%;
   }
 
   header nav ul {
-    justify-content: space-around;
-    flex-flow: row wrap;
+    justify-content: flex-end;
+    padding: 0;
+  }
+
+  header nav ul a {
+    padding: 0 10px;
   }
 
   aside .content-wrapper {
@@ -590,16 +586,18 @@ input[type=button] {
     width: 50%;
   }
 
-  .features-item {
-    width: 50%;
-  }
-
-  .features article {
+  .features .content-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
     flex-basis: auto;
+  }
+
+  .features-item {
+    padding: 0;
+    margin: 0;
+    width: 50%;
   }
 
   .reviews article {
@@ -687,7 +685,7 @@ input[type=button] {
   /* desktop styles here */
 
   header figure {
-    width: 60%;
+    width: 50%;
   }
 
   .form-description {
