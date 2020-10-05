@@ -703,6 +703,10 @@ input[type=button] {
   .footer-content {
     justify-content: space-between;
   }
+
+  footer .contact h4 {
+    width: 100%;
+  }
 }
 
 /* ==========================================================================
