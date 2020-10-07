@@ -163,6 +163,7 @@ header .content-wrapper {
 }
 
 .header-divider {
+  border-top: 1px solid #3a3a3a;
   width: 100%;
 }
 
@@ -172,6 +173,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background: #202322;
   margin: 0;
   width: 100%;
 }
@@ -179,7 +181,6 @@ footer {
 /* ------------------- Header Section --------------------------------------- */
 
 header {
-  background: #0B0804;
   padding: 15px 0;
 }
 
@@ -188,6 +189,7 @@ header figure {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 15px 0;
   width: 60%;
 }
 
@@ -205,7 +207,7 @@ header nav ul {
   align-items: center;
   flex-flow: row wrap;
   font-size: 1.125em;
-  padding: 15px 0 0 0;
+  padding: 20px 0;
   margin: 0;
   text-transform: uppercase;
   width: 100%;
@@ -214,17 +216,18 @@ header nav ul {
 /* ------------------------ Main Section ------------------------------------ */
 
 .hero-area {
-  background: url('img/unplugged-retreat.jpg') center no-repeat #333;
+  background: url('../img/hero.jpg') center no-repeat #333;
   background-size: cover;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: row wrap;
+  height: 500px;
   padding: 20px;
 }
 
 aside {
-  background-color: #256F51;
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -249,7 +252,7 @@ aside p {
 }
 
 .features {
-  background: url('img/ .jpg') center no-repeat #333;
+  background: url('../img/features.jpg') center no-repeat #333;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -276,12 +279,13 @@ aside p {
 }
 
 .features-item-description {
+  color: #e1e2ea;
   padding: 20px 60px;
   text-align: center;
 }
 
 .reviews {
-  background-color: #164132;
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -361,7 +365,7 @@ footer .social-icons {
 }
 
 .social-icons i {
-  background-color: green;
+  background-color: #527158;
   border-radius: 50%;
   color: #e2e3ed;
   font-size: 1.125em;
@@ -373,7 +377,7 @@ footer .social-icons {
 /* ----------------------- About Page --------------------------------------- */
 
 .mission {
-  background-color:
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -401,12 +405,13 @@ footer .social-icons {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 /* ----------------------- FAQ Page ----------------------------------- */
 
 .faq {
-  background-color:
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -544,7 +549,7 @@ input[type=button] {
   }
 
   .header-divider {
-    width: 0;
+    display: none;
   }
 
   header figure {
