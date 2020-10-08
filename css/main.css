@@ -544,8 +544,20 @@ input[type=button] {
 @media only screen and (min-width: 768px) {
   /* tablet styles here */
 
+  /* GENERAL STYLES */
+
+  .content-wrapper {
+    max-width: 648;
+  }
+
+/* HEADER */
+
   header {
     padding: 25px 60px;
+    width: 100%;
+  }
+
+  header .content-wrapper {
     width: 100%;
   }
 
@@ -574,6 +586,8 @@ input[type=button] {
     padding-left: 50px;
   }
 
+/* HERO AREA */
+
   .hero-area {
     background: url(../img/hero-tablet.jpg) center no-repeat #333;
     background-size: cover;
@@ -587,6 +601,8 @@ input[type=button] {
   .hero-area h1 {
     font-size: 3em;
   }
+
+/* ASIDE */
 
   aside {
     padding: 0;
@@ -625,6 +641,8 @@ input[type=button] {
     width: 40%;
   }
 
+/* FEATURES */
+
   .features .content-wrapper {
     display: flex;
     justify-content: center;
@@ -639,9 +657,17 @@ input[type=button] {
     width: 50%;
   }
 
+/* REVIEWS */
+
   .reviews article {
     display: flex;
     justify-content: flex-start;
+    flex-flow: row wrap;
+  }
+
+  .reviews h2 {
+    justify-content: flex-start;
+    padding-right: 200px;
   }
 
   .reviews figure {
@@ -649,12 +675,14 @@ input[type=button] {
   }
 
   .reviews-img {
-    width: 50%;
+    width: 100%;
   }
 
   .reviews-description {
     width: 50%;
   }
+
+/* FOOTER */
 
   footer {
     width: 100%;
@@ -684,6 +712,7 @@ input[type=button] {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-flow: row wrap;
   }
 
   .mission-content p {
@@ -691,17 +720,35 @@ input[type=button] {
   }
 
   .map figure {
-    padding-bottom: 56.25;
+    padding-bottom: 56.25%;
   }
 
   .contact-section .content-wrapper h2 {
+    font-size: 2.25em;
     width: 100%;
   }
 
-  .contact-content {
+  .contact-section {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding: 0 60px;
+  }
+
+  .contact-about {
+    display: flex;
+  }
+
+  .general {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+  }
+
+  .chat {
+    margin: 0;
+    padding: 0;
+    width: 50%;
   }
 
 /* FAQ PAGE */
