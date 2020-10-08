@@ -213,7 +213,7 @@ header nav ul {
 /* ------------------------ Main Section ------------------------------------ */
 
 .hero-area {
-  background: url(../img/hero.jpg) center no-repeat #333;
+  background: url(../img/hero-mobile.jpg) center no-repeat #333;
   background-size: cover;
   display: flex;
   justify-content: flex-start;
@@ -318,10 +318,6 @@ h3 {
 
 /* ------------------------ Footer Section ---------------------------------- */
 
-footer {
-  background: #0B0804;
-}
-
 footer p {
   margin: 0;
 }
@@ -336,7 +332,7 @@ footer .content-wrapper {
 }
 
 footer .footer-content {
-  margin: 50px 0;
+  margin: 20px 0;
   width: 55%;
 }
 
@@ -547,8 +543,9 @@ input[type=button] {
 
 @media only screen and (min-width: 768px) {
   /* tablet styles here */
+
   header {
-    padding: 20px;
+    padding: 25px 60px;
     width: 100%;
   }
 
@@ -574,13 +571,36 @@ input[type=button] {
   }
 
   header nav ul a {
-    padding: 0 10px;
+    padding-left: 50px;
+  }
+
+  .hero-area {
+    background: url(../img/hero-tablet.jpg) center no-repeat #333;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    min-height: 500px;
+    padding: 20px 60px;
+  }
+
+  .hero-area h1 {
+    font-size: 3em;
   }
 
   aside .content-wrapper {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+  }
+
+  aside h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+
+  aside p {
+    font-size: 0.875em;
   }
 
   .form-description {
@@ -696,6 +716,15 @@ input[type=button] {
   header figure {
     width: 50%;
   }
+
+  .hero-area {
+    background: url(../img/hero-desktop.jpg) center no-repeat #333;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    min-height: 500px;
+    padding: 20px;
 
   .form-description {
     width: 33.3%;
