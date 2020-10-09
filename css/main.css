@@ -547,7 +547,7 @@ input[type=button] {
   /* GENERAL STYLES */
 
   .content-wrapper {
-    max-width: 648;
+    max-width: 648px;
   }
 
 /* HEADER */
@@ -770,8 +770,8 @@ input[type=button] {
 @media only screen and (min-width: 1200px) {
   /* desktop styles here */
 
-  header figure {
-    width: 50%;
+  .content-wrapper {
+    max-width: 960px;
   }
 
   .hero-area {
@@ -781,14 +781,37 @@ input[type=button] {
     justify-content: flex-start;
     flex-flow: row wrap;
     min-height: 500px;
-    padding: 20px;
+  }
+
+  .hero-area h1 {
+    font-size: 3.75em;
+    padding: 0 60px;
+    margin: 0;
+    width: 80%;
+  }
+
+  aside .content-wrapper {
+    padding: 0 150px;
+  }
+
+  aside h3 {
+    font-size: 1.875em;
+  }
+
+  aside p {
+    font-size: 1.125em;
+  }
 
   .form-description {
-    width: 33.3%;
+    width: 50%;
   }
 
   .form {
-    width: 33.3%;
+    width: 50%;
+  }
+
+  .features h2 {
+    width: 80%;
   }
 
   .features-item {
@@ -799,9 +822,36 @@ input[type=button] {
     justify-content: space-between;
   }
 
+  .reviews {
+    padding: 80px;
+  }
+
+  .reviews h2 {
+    font-size: 2.25em;
+  }
+
   footer .contact h4 {
     width: 100%;
   }
+
+  .copyright {
+    text-align: center;
+    width: 100%;
+  }
+
+/* ABOUT PAGE */
+
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 100%;
+  }
+
+/* FAQ PAGE */
+
+  .faq h2 {
+    width: 100%;
+  }
+
 }
 
 /* ==========================================================================
