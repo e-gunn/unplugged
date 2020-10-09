@@ -841,15 +841,31 @@ input[type=button] {
 
 /* ABOUT PAGE */
 
+  .map figure {
+    padding-bottom: 37.5%;
+  }
+
   .mission h2,
   .contact-section .content-wrapper h2 {
+    font-size: 48px;
     width: 100%;
+  }
+
+  .contact-section h4 {
+    font-size: 1.875em;
   }
 
 /* FAQ PAGE */
 
   .faq h2 {
+    font-size: 3em;
     width: 100%;
+  }
+
+  .faq h4,
+  .faq p {
+    font-size: 1.125em;
+    line-height: 1;
   }
 
 }
