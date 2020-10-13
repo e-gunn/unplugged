@@ -382,23 +382,27 @@ footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-flow: row wrap;
-  padding: 0 15px;
   width: 100%;
 }
 
-.social-icons i {
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #527158;
   border-radius: 50%;
   color: #e2e3ed;
-  font-size: 1.125em;
-  line-height: 2em;
-  padding: 0 10px;
-  width: 33.3%;
+  height: 40px;
+  width: 40px;
+}
+
+footer .social-icons p i {
+  font-size: 1.3125em;
 }
 
 footer .copyright {
   margin: 20px 0;
+  text-align: center;
 }
 
 /* ----------------------- About Page --------------------------------------- */
@@ -700,6 +704,7 @@ footer .copyright {
 /* FOOTER */
 
   footer .content-wrapper {
+    margin: 50px 0;
     width: 100%;
   }
 
@@ -707,20 +712,35 @@ footer .copyright {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 100px 0;
+    flex-flow: row wrap;
+    width: 100%;
   }
 
-  .contact {
-    width: 50%;
+  footer .contact {
+    margin-bottom: 0;
+    width: 30%;
   }
 
-  .social {
-    width: 50%;
+  footer .social {
+    width: 30%;
   }
 
   footer h4 {
     font-size: 1.5em;
     margin-bottom: 40px 0;
+  }
+
+  footer p {
+    line-height: 1.285em;
+  }
+
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
+  }
+
+  footer .copyright {
+    width: 100%;
   }
 
 /* ABOUT PAGE */
@@ -804,17 +824,12 @@ footer .copyright {
   .hero-area {
     background: url(../img/hero-desktop.jpg) center no-repeat #333;
     background-size: cover;
-    display: flex;
-    justify-content: flex-start;
-    flex-flow: row wrap;
-    min-height: 500px;
-    margin: 0 auto;
+    padding: 40px 160px;
   }
 
   .hero-area h1 {
     font-size: 3.75em;
-    margin: 0 60px;
-    width: 80%;
+    margin: 0;
   }
 
   aside .content-wrapper {
@@ -836,12 +851,16 @@ footer .copyright {
   }
 
   .features h2 {
-    font-size:
-    width: 80%;
+    font-size: 2.25em;
+    width:
   }
 
-  .features-item {
+  .features article {
     width: 33.3%;
+  }
+
+  .features p {
+    font-size: 1.125em;
   }
 
   .reviews-description {
@@ -863,16 +882,18 @@ footer .copyright {
 
 /* FOOTER */
 
-  .footer-content {
+  footer .footer-content {
     justify-content: space-between;
+    margin: 0 50px;
+  }
+
+  footer .contact,
+  footer .social {
+    width: 20%;
   }
 
   footer .contact h4 {
-    width: 100%;
-  }
-
-  .copyright {
-    text-align: center;
+    font-size: 1.875em;
     width: 100%;
   }
 
