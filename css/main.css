@@ -413,6 +413,7 @@ footer .copyright {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 50px 0;
 }
 
 .map figure {
@@ -437,6 +438,7 @@ footer .copyright {
   align-items: center;
   flex-flow: row wrap;
   background-color: #2a423a;
+  padding: 50px 0;
 }
 
 /* ----------------------- FAQ Page ----------------------------------- */
@@ -750,6 +752,11 @@ footer .copyright {
     justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
+    padding: 50px 0;
+  }
+
+  .mission-content h2 {
+    padding-bottom: 20px;
   }
 
   .mission-content p {
@@ -769,11 +776,15 @@ footer .copyright {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 0 60px;
+    padding: 100px 60px;
   }
 
   .contact-about {
     display: flex;
+  }
+
+  .contact-about h4 {
+    font-size: 1.5em;
   }
 
   .general {
@@ -898,6 +909,10 @@ footer .copyright {
   }
 
 /* ABOUT PAGE */
+
+  .mission {
+    padding: 0 120px;
+  }
 
   .map figure {
     padding-bottom: 37.5%;
