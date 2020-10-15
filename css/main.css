@@ -459,6 +459,10 @@ footer .copyright {
   padding: 50px 0 0 0;
 }
 
+.questions {
+  width: 100%;
+}
+
 .faq h2 {
   line-height: 1;
   margin-bottom: 50px;
@@ -819,14 +823,20 @@ footer .copyright {
     justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
-    padding: 50px 60px;
+    padding: 100px 60px;
   }
 
-  .faq .questions {
+  .faq-content {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .questions {
     width: 50%;
   }
 
   .faq h2 {
+    margin-bottom: 20px;
     width: 100%;
   }
 
@@ -834,6 +844,11 @@ footer .copyright {
   .faq p {
     font-size: 0.875em;
     line-height: 1.125;
+    padding-right: 25px;
+  }
+
+  .faq p {
+    margin-bottom: 20px;
   }
 
 }
@@ -953,6 +968,10 @@ footer .copyright {
 
 /* FAQ PAGE */
 
+  .faq {
+    padding: 0 100px;
+  }
+
   .faq h2 {
     font-size: 3em;
     width: 100%;
@@ -962,6 +981,7 @@ footer .copyright {
   .faq p {
     font-size: 1.125em;
     line-height: 1;
+    padding-right: 40px;
   }
 
 }
