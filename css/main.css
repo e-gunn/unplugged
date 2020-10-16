@@ -773,11 +773,11 @@ footer .copyright {
   }
 
   .mission-content h2 {
-    padding-bottom: 20px;
+    padding-bottom: 70px;
   }
 
   .mission-content p {
-    width: 50%;
+    width: 47.5%;
   }
 
   .map figure {
@@ -786,6 +786,7 @@ footer .copyright {
 
   .contact-section .content-wrapper h2 {
     font-size: 2.25em;
+    padding-bottom: 30px;
     width: 100%;
   }
 
@@ -804,16 +805,13 @@ footer .copyright {
     font-size: 1.5em;
   }
 
-  .general {
-    margin: 0;
-    padding: 0;
+  .general,
+  .chat {
     width: 50%;
   }
 
   .chat {
-    margin: 0;
-    padding: 0;
-    width: 50%;
+    padding-left: 50px;
   }
 
 /* FAQ PAGE */
@@ -959,6 +957,7 @@ footer .copyright {
   .mission h2,
   .contact-section .content-wrapper h2 {
     font-size: 48px;
+    padding-bottom: 0;
     width: 100%;
   }
 
